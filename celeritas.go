@@ -2,10 +2,6 @@ package celeritas
 
 import (
 	"fmt"
-	"github.com/tsawler/celeritas/filesystems/miniofilesystem"
-	"github.com/tsawler/celeritas/filesystems/s3filesystem"
-	"github.com/tsawler/celeritas/filesystems/sftpfilesystem"
-	"github.com/tsawler/celeritas/filesystems/webdavfilesystem"
 	"log"
 	"net"
 	"net/rpc"
@@ -14,6 +10,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/sCuz12/celeritas/filesystems/miniofilesystem"
+	"github.com/sCuz12/celeritas/filesystems/s3filesystem"
+	"github.com/sCuz12/celeritas/filesystems/sftpfilesystem"
+	"github.com/sCuz12/celeritas/filesystems/webdavfilesystem"
+
 	"github.com/CloudyKit/jet/v6"
 	"github.com/alexedwards/scs/v2"
 	"github.com/dgraph-io/badger/v3"
@@ -21,10 +22,10 @@ import (
 	"github.com/gomodule/redigo/redis"
 	"github.com/joho/godotenv"
 	"github.com/robfig/cron/v3"
-	"github.com/tsawler/celeritas/cache"
-	"github.com/tsawler/celeritas/mailer"
-	"github.com/tsawler/celeritas/render"
-	"github.com/tsawler/celeritas/session"
+	"github.com/sCuz12/celeritas/cache"
+	"github.com/sCuz12/celeritas/mailer"
+	"github.com/sCuz12/celeritas/render"
+	"github.com/sCuz12/celeritas/session"
 )
 
 const version = "1.0.0"

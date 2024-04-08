@@ -3,12 +3,13 @@ package celeritas
 import (
 	"errors"
 	"fmt"
-	"github.com/gabriel-vasile/mimetype"
-	"github.com/tsawler/celeritas/filesystems"
 	"io"
 	"net/http"
 	"os"
 	"path"
+
+	"github.com/gabriel-vasile/mimetype"
+	"github.com/sCuz12/celeritas/filesystems"
 )
 
 func (c *Celeritas) UploadFile(r *http.Request, destination, field string, fs filesystems.FS) error {

@@ -2,12 +2,13 @@ package webdavfilesystem
 
 import (
 	"fmt"
-	"github.com/studio-b12/gowebdav"
-	"github.com/tsawler/celeritas/filesystems"
 	"io"
 	"os"
 	"path"
 	"strings"
+
+	"github.com/sCuz12/celeritas/filesystems"
+	"github.com/studio-b12/gowebdav"
 )
 
 // WebDAV is the type for the webdav file system

@@ -1,4 +1,4 @@
-module github.com/tsawler/celeritas
+module github.com/sCuz12/celeritas
 
 go 1.17
 
@@ -11,11 +11,17 @@ require (
 	github.com/alexedwards/scs/v2 v2.4.0
 	github.com/alicebob/miniredis/v2 v2.15.1
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
+	github.com/aws/aws-sdk-go v1.42.19
+	github.com/bwmarrin/go-alone v0.0.0-20190806015146-742bb55d1631
 	github.com/dgraph-io/badger/v3 v3.2103.1
 	github.com/fatih/color v1.13.0
+	github.com/gabriel-vasile/mimetype v1.4.0
 	github.com/gertd/go-pluralize v0.1.7
 	github.com/go-chi/chi/v5 v5.0.4
+	github.com/go-git/go-git/v5 v5.4.2
+	github.com/go-rod/rod v0.101.8
 	github.com/go-sql-driver/mysql v1.6.0
+	github.com/gobuffalo/pop v4.13.1+incompatible
 	github.com/golang-migrate/migrate/v4 v4.14.1
 	github.com/gomodule/redigo v1.8.5
 	github.com/iancoleman/strcase v0.2.0
@@ -23,9 +29,15 @@ require (
 	github.com/jackc/pgx/v4 v4.13.0
 	github.com/joho/godotenv v1.4.0
 	github.com/justinas/nosurf v1.1.1
+	github.com/minio/minio-go/v7 v7.0.16
+	github.com/ory/dockertest/v3 v3.8.0
+	github.com/pkg/sftp v1.13.4
 	github.com/robfig/cron/v3 v3.0.1
+	github.com/studio-b12/gowebdav v0.0.0-20211109083228-3f8721cd4b6f
+	github.com/tsawler/celeritas v0.0.0-20220111160753-560e89bc68a4
 	github.com/vanng822/go-premailer v1.20.1
 	github.com/xhit/go-simple-mail/v2 v2.10.0
+	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97
 )
 
 require (
@@ -40,10 +52,7 @@ require (
 	github.com/acomagu/bufpipe v1.0.3 // indirect
 	github.com/alicebob/gopher-json v0.0.0-20200520072559-a9ecdc9d1d3a // indirect
 	github.com/andybalholm/cascadia v1.1.0 // indirect
-	github.com/aws/aws-sdk-go v1.42.19 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
-	github.com/bwmarrin/go-alone v0.0.0-20190806015146-742bb55d1631 // indirect
-	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cenkalti/backoff/v4 v4.1.1 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
@@ -57,11 +66,8 @@ require (
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/emirpasic/gods v1.12.0 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
-	github.com/gabriel-vasile/mimetype v1.4.0 // indirect
 	github.com/go-git/gcfg v1.5.0 // indirect
 	github.com/go-git/go-billy/v5 v5.3.1 // indirect
-	github.com/go-git/go-git/v5 v5.4.2 // indirect
-	github.com/go-rod/rod v0.101.8 // indirect
 	github.com/gobuffalo/envy v1.10.1 // indirect
 	github.com/gobuffalo/fizz v1.14.0 // indirect
 	github.com/gobuffalo/flect v0.2.4 // indirect
@@ -72,7 +78,6 @@ require (
 	github.com/gobuffalo/nulls v0.4.1 // indirect
 	github.com/gobuffalo/packd v1.0.1 // indirect
 	github.com/gobuffalo/plush/v4 v4.1.9 // indirect
-	github.com/gobuffalo/pop v4.13.1+incompatible // indirect
 	github.com/gobuffalo/tags/v3 v3.1.2 // indirect
 	github.com/gobuffalo/validate v2.0.4+incompatible // indirect
 	github.com/gobuffalo/validate/v3 v3.3.1 // indirect
@@ -107,13 +112,11 @@ require (
 	github.com/kr/fs v0.1.0 // indirect
 	github.com/lib/pq v1.10.4 // indirect
 	github.com/mailgun/mailgun-go/v4 v4.5.3 // indirect
-	github.com/markbates/goth v1.68.0 // indirect
 	github.com/mattn/go-colorable v0.1.9 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mattn/go-sqlite3 v1.14.9 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.16 // indirect
 	github.com/minio/md5-simd v1.1.0 // indirect
-	github.com/minio/minio-go/v7 v7.0.16 // indirect
 	github.com/minio/sha256-simd v0.1.1 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
@@ -123,10 +126,7 @@ require (
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/opencontainers/runc v1.0.2 // indirect
-	github.com/ory/dockertest v3.3.5+incompatible // indirect
-	github.com/ory/dockertest/v3 v3.8.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pkg/sftp v1.13.4 // indirect
 	github.com/rogpeppe/go-internal v1.8.0 // indirect
 	github.com/rs/xid v1.2.1 // indirect
 	github.com/sendgrid/rest v2.6.5+incompatible // indirect
@@ -135,7 +135,6 @@ require (
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/sourcegraph/annotate v0.0.0-20160123013949-f4cad6c6324d // indirect
 	github.com/sourcegraph/syntaxhighlight v0.0.0-20170531221838-bd320f5d308e // indirect
-	github.com/studio-b12/gowebdav v0.0.0-20211109083228-3f8721cd4b6f // indirect
 	github.com/vanng822/css v1.0.1 // indirect
 	github.com/xanzy/ssh-agent v0.3.0 // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
@@ -146,14 +145,11 @@ require (
 	github.com/ysmood/leakless v0.7.0 // indirect
 	github.com/yuin/gopher-lua v0.0.0-20200816102855-ee81675732da // indirect
 	go.opencensus.io v0.23.0 // indirect
-	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
 	golang.org/x/net v0.0.0-20211015210444-4f30a5c0130f // indirect
-	golang.org/x/oauth2 v0.0.0-20210402161424-2e8d93401602 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
 	golang.org/x/sys v0.0.0-20210809222454-d867a43fc93e // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.6 // indirect
-	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.26.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
