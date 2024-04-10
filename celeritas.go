@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/sCuz12/celeritas/factory"
 	"github.com/sCuz12/celeritas/filesystems/miniofilesystem"
 	"github.com/sCuz12/celeritas/filesystems/s3filesystem"
 	"github.com/sCuz12/celeritas/filesystems/sftpfilesystem"
@@ -61,6 +62,7 @@ type Celeritas struct {
 	SFTP          sftpfilesystem.SFTP
 	WebDAV        webdavfilesystem.WebDAV
 	Minio         miniofilesystem.Minio
+	Factory	 	  factory.Factory
 }
 
 type Server struct {
