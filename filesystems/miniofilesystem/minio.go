@@ -3,12 +3,13 @@ package miniofilesystem
 import (
 	"context"
 	"fmt"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/tsawler/celeritas/filesystems"
 	"log"
 	"path"
 	"strings"
+
+	"github.com/minio/minio-go/v7"
+	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/sCuz12/celeritas/filesystems"
 )
 
 // Minio is the overall type for the minio filesystem, and contains

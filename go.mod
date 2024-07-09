@@ -34,7 +34,6 @@ require (
 	github.com/pkg/sftp v1.13.4
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/studio-b12/gowebdav v0.0.0-20211109083228-3f8721cd4b6f
-	github.com/tsawler/celeritas v0.0.0-20220111160753-560e89bc68a4
 	github.com/vanng822/go-premailer v1.20.1
 	github.com/xhit/go-simple-mail/v2 v2.10.0
 	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97
